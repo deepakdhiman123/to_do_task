@@ -1,0 +1,19 @@
+body {
+    padding-top: 40px;
+}
+.custom-heading {
+    margin-top: 40px;
+    /* Other styles you want to apply */
+}
+.table td,
+.table th {
+    vertical-align: middle;
+}
+.s-no{
+    width: 20px;
+}
+
+.completed-task {
+    text-decoration: line-through;
+    color: gray;
+}
