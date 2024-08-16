@@ -14,10 +14,7 @@ use App\Http\Controllers\TaskController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', [TaskController::class, 'index']);
 Route::get('/tasks/show-all', [TaskController::class, 'showAllTasks']);
 Route::resource('tasks', TaskController::class);
 Route::patch('/tasks/{task}/complete', [TaskController::class, 'markCompleted']);
